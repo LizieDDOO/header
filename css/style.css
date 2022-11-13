@@ -1,0 +1,111 @@
+:root {
+  --blue: #00aaff;
+  --big: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 32px;
+
+  background-color: #161b22;
+}
+
+.header__item,
+.header__group,
+.header__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__item {
+  gap: 15px;
+}
+
+.header__group {
+  gap: 10px;
+}
+
+.header__nav ul {
+  gap: 20px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.header__link {
+  list-style: none;
+  color: white;
+}
+
+.header__link-adaptive2 {
+  display: none;
+}
+
+.header__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.input__text {
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  background-color: #161b22;
+  border: 1px solid white;
+  transition: 0.5s;
+
+  padding: 10px;
+}
+.input__text:focus {
+  width: 500px;
+  height: 20px;
+  animation: shadow 2s infinite ease-in-out;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.icon__git {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.col {
+  fill: white;
+}
+.Header-link {
+  fill: white;
+}
+.logo1 {
+  fill: white;
+}
+.logo__img {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .header__link-adaptive2 {
+    display: block;
+
+	text-decoration: none;
+
+	list-style: none;
+  }
+  .link__text-adaptive {
+    display: none;
+  }
+}
